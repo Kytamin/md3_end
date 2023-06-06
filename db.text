@@ -1,0 +1,12 @@
+create database homestay;
+create table homestay(
+id int primary key auto_increment,
+name varchar(50) not null,
+city varchar(50) not null,
+numRestRoom int check (numRestRoom >0),
+numWCroom int not null,
+price int check(price>0) not null,
+description varchar(255) not null
+);
+
+insert into  homestay(name,city,numRestRoom,numWCroom,price,description) value ('ky','HN',1,2,123123,"khong co")
